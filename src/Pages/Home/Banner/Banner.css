@@ -1,0 +1,7 @@
+.banner {
+	background: url('../../../images/bannerbackground.png');
+	background-size: auto;
+	background-position: top;
+	background-repeat: no-repeat;
+	min-height: 80vh;
+}
