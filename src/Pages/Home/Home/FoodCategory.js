@@ -10,11 +10,10 @@ const FoodCategory = () => {
 	const category = foodCategory || 'breakfast';
 
 	const foodList = foods.filter((food) => food.food_category === category);
-	console.log(foodList);
 
 	return (
 		<div className='py-10'>
-			<div className='grid grid-cols-2 lg:grid-cols-3 place-items-center gap-4'>
+			<div className='grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center gap-4'>
 				{foodList.map((food) => (
 					<FoodItemCard key={food.id} foodItem={food} />
 				))}
